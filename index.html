@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia | Use agora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="conteudo">
+        <section class="cabecalho">
+            <img class="imagem-logo" src="./assets/alura.png" alt="Imagem da Logo">
+        </section>
+        <section class="area-de-entrada">
+            <textarea class="campo-de-entrada" spellcheck="false" placeholder="Digite seu texto"></textarea>
+            <div class="aviso">
+                <img class="alerta" src="./assets/alerta.png" alt="Icone de Alerta">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="area-btn">
+                <button class="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="area-de-saida">
+            <div class="area-desativada">
+                <textarea class="texto-decodificado" spellcheck="false"></textarea>
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+            <div class="area-ativada">
+                <img class="area-ativa-imagem" src="./assets/conteudo-visual.png" alt="Imagem do Chat">
+                <h2 class="area-ativa-titulo">Nenhuma mensagem encontrada</h2>
+                <p class="area-ativa-paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
