@@ -159,3 +159,94 @@ body {
     color: var(--cor-de-texto-terciaria);
     padding: 10px;
 }
+
+@media (max-width: 1300px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 5% 0;
+    }
+    
+    .cabecalho, .area-de-entrada, .area-de-saida {
+        width: 90%;
+    }
+
+    .area-de-entrada {
+        padding: 5% 0;
+    }
+    
+    .btn-criptografar, .btn-descriptografar, .btn-copiar {
+        width: 100%;
+    }
+    
+    .area-ativada, .area-desativada {
+        width: 100%;
+    }
+
+    .area-ativa-imagem {
+        width: 80%;
+        height: auto;
+    }
+
+    .campo-de-entrada, .texto-decodificado {
+        width: 100%;
+        height: 200px;
+        font-size: 1.5rem;
+    }
+
+    .area-ativa-imagem{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .conteudo {
+        gap: 20px;
+        padding: 2% 0;
+    }
+
+    .cabecalho, .area-de-entrada, .area-de-saida {
+        width: 100%;
+    }
+    
+    .campo-de-entrada, .texto-decodificado {
+        width: 100%;
+        height: 200px;
+        font-size: 1.2rem;
+    }
+
+    .area-btn {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .btn-criptografar, .btn-descriptografar, .btn-copiar {
+        height: 50px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .area-de-saida {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .area-ativada, .area-desativada {
+        width: 100%;
+    }
+
+    .area-ativa-titulo {
+        font-size: 1.2rem;
+    }
+
+    .area-ativa-paragrafo {
+        font-size: 0.9rem;
+    }
+
+    .area-ativa-imagem{
+        display: none;
+    }
+}
